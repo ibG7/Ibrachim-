@@ -1,0 +1,139 @@
+/* تنسيق عام */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+}
+
+/* صفحة تسجيل الدخول */
+#loginPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0044cc;
+    color: white;
+}
+
+#loginPage h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#loginPage input {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1em;
+    width: 250px;
+}
+
+#loginPage button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#loginPage button:hover {
+    background-color: #e68900;
+}
+
+/* لوحة التحكم */
+#dashboardPage {
+    display: none;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+#dashboardPage h2 {
+    text-align: center;
+    color: #0044cc;
+    margin-bottom: 20px;
+}
+
+/* أزرار لوحة التحكم */
+button {
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003399;
+}
+
+/* الجداول */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+table th {
+    background-color: #0044cc;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+table tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+/* التفاعل مع الحذف */
+button.delete {
+    background-color: #ff4d4d;
+}
+
+button.delete:hover {
+    background-color: #ff1a1a;
+}
+
+/* تنسيق الطباعة */
+@media print {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        color: red;
+    }
+
+    table {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    table th, table td {
+        border: 1px solid #000;
+        padding: 8px;
+        text-align: center;
+    }
+
+    footer {
+        font-size: 12px;
+        text-align: center;
+        margin-top: 20px;
+    }
+}

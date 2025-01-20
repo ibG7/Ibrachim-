@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السنمي للأدوية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- صفحة تسجيل الدخول -->
+    <div id="loginPage">
+        <h1>تسجيل الدخول</h1>
+        <input type="text" id="username" placeholder="اسم المستخدم" required>
+        <input type="password" id="password" placeholder="كلمة المرور" required>
+        <button onclick="login()">تسجيل الدخول</button>
+    </div>
+
+    <!-- لوحة التحكم بعد تسجيل الدخول -->
+    <div id="dashboardPage" class="hidden">
+        <h2>لوحة التحكم</h2>
+
+        <!-- أزرار لوحة التحكم -->
+        <button onclick="addItem()">إضافة صنف</button>
+        <button onclick="addInvoice()">إضافة فاتورة</button>
+        <button onclick="viewItems()">مشاهدة الأصناف</button>
+        <button onclick="viewInvoices()">مشاهدة الفواتير</button>
+        <button onclick="printItems()">طباعة الأصناف</button>
+        <button onclick="printInvoices()">طباعة الفواتير</button>
+        <button class="delete" onclick="deleteItem()">حذف صنف</button>
+        <button class="delete" onclick="deleteInvoice()">حذف فاتورة</button>
+        
+        <!-- قسم الأصناف -->
+        <h3>الأصناف</h3>
+        <table id="itemsTable">
+            <thead>
+                <tr>
+                    <th>اختر</th>
+                    <th>اسم الصنف</th>
+                    <th>نوع الصنف</th>
+                    <th>رقم الصنف</th>
+                    <th>السعر</th>
+                    <th>تاريخ الإنتاج</th>
+                    <th>تاريخ الانتهاء</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- بيانات الأصناف ستضاف هنا -->
+            </tbody>
+        </table>
+
+        <!-- قسم الفواتير -->
+        <h3>الفواتير</h3>
+        <table id="invoicesTable">
+            <thead>
+                <tr>
+                    <th>اختر</th>
+                    <th>اسم الصنف</th>
+                    <th>رقم الصنف</th>
+                    <th>السعر</th>
+                    <th>العدد الإجمالي</th>
+                    <th>التاريخ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- بيانات الفواتير ستضاف هنا -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <p>© 2025 برهان السنمي للأدوية</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
